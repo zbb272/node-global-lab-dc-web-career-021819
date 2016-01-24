@@ -31,8 +31,3 @@ To understand the discrepancy, you need to know how `delete` works and what was 
 
 * [Delete operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
 
-## Solution
-
-`user` was created explicitly and `account` implicitly. The way `delete` works, it removes the property of an object and returns true of false. It has no effect on variable or function names. 
-
-When we delete `user` it is a real property of `global` and thus we get true. On the other hand, when we delete `accounts`, it's a non-configurable property of `global` due to `var`, so `delete` fails.
