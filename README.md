@@ -3,8 +3,8 @@
 ## Objectives
 
 1. Use REPL
-1. Access global
-1. Understand scoping and explicit vs. implicit declaration
+2. Access global
+3. Understand scoping and explicit vs. implicit declaration
 
 ## Introduction
 
