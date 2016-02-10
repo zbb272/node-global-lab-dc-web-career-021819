@@ -3,8 +3,8 @@
 ## Objectives
 
 1. Use REPL
-1. Access global
-1. Understand scoping and explicit vs. implicit declaration
+2. Access global
+3. Understand scoping and explicit vs. implicit declaration
 
 ## Introduction
 
@@ -13,16 +13,17 @@ Understanding global and scoping will give you a good foundation for future deve
 ## Instructions
 
 1. Enter Node REPL
-1. Print global object
-1. Narrow down to specific info of process (`global.process`)
+1. Print the `global` object
+1. Print the `process` object (`global.process`)
 1. Create a global variable `user` explicitly with `global.user = {admin: false}`
-2. Create a global variable implicitly with `var account = {balance: 1000}` 
+2. Create a global variable implicitly with `var account = {balance: 1000}`
 3. Open a new REPL and check for values of user and account (ReferenceError)
 2. Go back to the 1st REPL and print user and account with `global.user` and `global.account`
-3. Delete `user` with `delete user` (true) and print it again (ReferenceError)
+3. Delete `user` with `delete user` (true) and print it again. You should get `ReferenceError` because you deleted `user`.
 4. Delete `account` with `delete account` (false) and print it again ({balance: 1000})
 3. Exit REPL
-4. Contemplate on the fact that user and account reacted differently to the `delete` operator. 
+4. Contemplate on the fact that user and account reacted differently to the `delete` operator.
+
 
 
 ### Extra Info
@@ -33,6 +34,6 @@ To understand the discrepancy, you need to know how `delete` works and what was 
 
 ## Solution
 
-`user` was created explicitly and `account` implicitly. The way `delete` works, it removes the property of an object and returns true of false. It has no effect on variable or function names. 
+`user` was created explicitly and `account` implicitly. The way `delete` works, it removes the property of an object and returns true of false. It has no effect on variable or function names.
 
 When we delete `user` it is a real property of `global` and thus we get true. On the other hand, when we delete `accounts`, it's a non-configurable property of `global` due to `var`, so `delete` fails.
