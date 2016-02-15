@@ -16,14 +16,13 @@ Understanding global and scoping will give you a good foundation for future deve
 1. Print the `global` object
 1. Print the `process` object (`global.process`)
 1. Create a global variable `user` explicitly with `global.user = {admin: false}`
-2. Create a global variable implicitly with `var account = {balance: 1000}`
-3. Open a new REPL and check for values of user and account (ReferenceError)
-2. Go back to the 1st REPL and print user and account with `global.user` and `global.account`
-3. Delete `user` with `delete user` (true) and print it again. You should get `ReferenceError` because you deleted `user`.
-4. Delete `account` with `delete account` (false) and print it again ({balance: 1000})
-3. Exit REPL
-4. Contemplate on the fact that user and account reacted differently to the `delete` operator.
-
+1. Create a global variable implicitly with `var account = {balance: 1000}`
+1. Open a new REPL and check for values of user and account (ReferenceError)
+1. Go back to the 1st REPL and print user and account with `global.user` and `global.account`
+1. Delete `user` with `delete user` (true) and print it again. You should get `ReferenceError` because you deleted `user`.
+1. Delete `account` with `delete account` (false) and print it again ({balance: 1000})
+1. Exit REPL
+1. Contemplate on the fact that user and account reacted differently to the `delete` operator. Read the extra info if you forgot how `delete` works (it's JavaScript, not exclusive to Node).
 
 
 ### Extra Info
