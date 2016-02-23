@@ -8,9 +8,11 @@
 
 ## Introduction
 
-Scoping is about defining and accessing variables/objects/functions. Here's a small example which can illustrate how dangerous to not understand the scopes: our program uses variable named `list` and module A uses a variable `list`. When we import the module A, the `list` of the program is lost!
+Scoping is about defining and accessing variables/objects/functions. Here's a small example which can illustrate how dangerous it can be to not understand scope: our program uses variable named `list` and module A uses a variable `list`. When we import the module A, the `list` of the program is lost!
 
 Understanding global and scoping will give you a good foundation for future development.
+
+In this lab, we're going to be using the Node REPL to create several bank accounts and users in different scopes.
 
 ## Instructions
 
