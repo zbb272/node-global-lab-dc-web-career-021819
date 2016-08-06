@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Scoping is about defining and accessing variables/objects/functions. Here's a small example which can illustrate how dangerous it can be to not understand scope: our program uses anvariable named `list` and module A uses a variable named `list`. When we import module A, the original `list` of the program is lost!
+Scoping is about defining and accessing variables/objects/functions. Here's a small example which can illustrate how dangerous it can be to not understand scope: our program uses a variable named `list` and module A uses a variable named `list`. When we import module A, the original `list` of the program is lost!
 
 Understanding global and scoping will give you a good foundation for future development.
 
@@ -36,3 +36,5 @@ To understand the discrepancy, you need to know how `delete` works and what was 
 * [Delete operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/node-global-lab' title='node-global-lab'>node-global-lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/node-global-lab'>Node Global Lab</a> on Learn.co and start learning to code for free.</p>
