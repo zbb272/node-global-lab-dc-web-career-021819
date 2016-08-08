@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Scoping is about defining and accessing variables/objects/functions. Here's a small example which can illustrate how dangerous it can be to not understand scope: our program uses anvariable named `list` and module A uses a variable named `list`. When we import module A, the original `list` of the program is lost!
+Scoping is about defining and accessing variables/objects/functions. Here's a small example which can illustrate how dangerous it can be to not understand scope: our program uses a variable named `list` and module A uses a variable named `list`. When we import module A, the original `list` of the program is lost!
 
 Understanding global and scoping will give you a good foundation for future development.
 
@@ -40,4 +40,5 @@ To understand the discrepancy, you need to know how `delete` works and what was 
 `user` was created explicitly and `account` implicitly. The way `delete` works, it removes the property of an object and returns true of false. It has no effect on variable or function names.
 
 When we delete `user` it is a real property of `global` and thus we get true. On the other hand, when we delete `accounts`, it's a non-configurable property of `global` due to `var`, so `delete` fails.
+
 
